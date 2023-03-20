@@ -1,7 +1,7 @@
 **[中文](./README-CN.md) | English**
 
-# bilingual_book_maker
-The bilingual_book_maker is an AI translation tool that uses ChatGPT to assist users in creating multi-language versions of epub/txt files and books. This tool is exclusively designed for translating epub books that have entered the public domain and is not intended for copyrighted works. Before using this tool, please review the project's **[disclaimer](./disclaimer.md)**.
+# translated_book_maker
+The translated_book_maker is an AI translation tool that uses ChatGPT to assist users in creating translated versions of epub/txt files and books. This tool is exclusively designed for translating epub books that have entered the public domain and is not intended for copyrighted works. Before using this tool, please review the project's **[disclaimer](./disclaimer.md)**.
 
 ![image](https://user-images.githubusercontent.com/15976103/222317531-a05317c5-4eee-49de-95cd-04063d9539d9.png)
 
@@ -107,7 +107,7 @@ You can use [Docker](https://www.docker.com/) if you don't want to deal with set
 
 ```shell
 # Build image
-docker build --tag bilingual_book_maker .
+docker build --tag translated_book_maker .
 
 # Run container
 # "$folder_path" represents the folder where your book file locates. Also, it is where the processed file will be stored.
@@ -118,7 +118,7 @@ $book_name=your_book_name # $book_name="animal_farm.epub"
 $openai_key=your_api_key # $openai_key="sk-xxx"
 $language=your_language # see utils.py
 
-docker run --rm --name bilingual_book_maker --mount type=bind,source=$folder_path,target='/app/test_books' bilingual_book_maker --book_name "/app/test_books/$book_name" --openai_key $openai_key --language $language
+docker run --rm --name translated_book_maker --mount type=bind,source=$folder_path,target='/app/test_books' translated_book_maker --book_name "/app/test_books/$book_name" --openai_key $openai_key --language $language
 
 # Linux
 export folder_path=${your_folder_path}
@@ -126,14 +126,14 @@ export book_name=${your_book_name}
 export openai_key=${your_api_key}
 export language=${your_language}
 
-docker run --rm --name bilingual_book_maker --mount type=bind,source=${folder_path},target='/app/test_books' bilingual_book_maker --book_name "/app/test_books/${book_name}" --openai_key ${openai_key} --language "${language}"
+docker run --rm --name translated_book_maker --mount type=bind,source=${folder_path},target='/app/test_books' translated_book_maker --book_name "/app/test_books/${book_name}" --openai_key ${openai_key} --language "${language}"
 ```
 
 For example:
 
 ```shell
 # Linux
-docker run --rm --name bilingual_book_maker --mount type=bind,source=/home/user/my_books,target='/app/test_books' bilingual_book_maker --book_name /app/test_books/animal_farm.epub --openai_key sk-XXX --test --test_num 1 --language zh-hant
+docker run --rm --name translated_book_maker --mount type=bind,source=/home/user/my_books,target='/app/test_books' translated_book_maker --book_name /app/test_books/animal_farm.epub --openai_key sk-XXX --test --test_num 1 --language zh-hant
 ```
 
 ## Notes
