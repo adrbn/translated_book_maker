@@ -1,5 +1,16 @@
 # translated_book_maker
+
+<br/>
+
+**This is an unofficial fork of [yihong0618's _bilingual_book_maker_ project](https://github.com/yihong0618/bilingual_book_maker).**
+
+**This project is a tweaked version of his which gives you as an output _only the translated version_ of the file you input**
+<br/>
+<br/>
+
 The translated_book_maker is an AI translation tool that uses ChatGPT to assist users in creating translated versions of epub/txt files and books. This tool is exclusively designed for translating epub books that have entered the public domain and is not intended for copyrighted works. Before using this tool, please review the project's **[disclaimer](./disclaimer.md)**.
+
+<br/>
 
 ![image](https://user-images.githubusercontent.com/128328324/226233054-85949e21-7442-4c55-87f1-ab242842df64.png)
 
@@ -142,6 +153,7 @@ docker run --rm --name translated_book_maker --mount type=bind,source=/home/user
 # Thanks
 
 - @[yetone](https://github.com/yetone)
+- @[eleven-monkey](https://github.com/eleven-monkey) for [his idea](https://github.com/yihong0618/bilingual_book_maker/issues/170#issuecomment-1472130594) which enables rendering only the translation in the output file.
 
 # Contribution
 
