@@ -1,9 +1,9 @@
-**[中文](./README-CN.md) | English**
+**English**
 
 # translated_book_maker
 The translated_book_maker is an AI translation tool that uses ChatGPT to assist users in creating translated versions of epub/txt files and books. This tool is exclusively designed for translating epub books that have entered the public domain and is not intended for copyrighted works. Before using this tool, please review the project's **[disclaimer](./disclaimer.md)**.
 
-![image](https://user-images.githubusercontent.com/15976103/222317531-a05317c5-4eee-49de-95cd-04063d9539d9.png)
+![image](https://user-images.githubusercontent.com/128328324/226233054-85949e21-7442-4c55-87f1-ab242842df64.png)
 
 
 ## Preparation
@@ -154,8 +154,6 @@ docker run --rm --name translated_book_maker --mount type=bind,source=/home/user
 ## Appreciation
 
 Thank you, that's enough.
-
-![image](https://user-images.githubusercontent.com/15976103/222407199-1ed8930c-13a8-402b-9993-aaac8ee84744.png)
 
 [^token]: https://platform.openai.com/account/api-keys
 [^black]: https://github.com/psf/black
