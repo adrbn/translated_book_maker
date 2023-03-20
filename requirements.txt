@@ -1,0 +1,6 @@
+bs4
+openai
+requests
+ebooklib
+rich
+tqdm
