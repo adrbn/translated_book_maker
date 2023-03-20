@@ -4,7 +4,7 @@
 
 **This is an unofficial fork of [yihong0618's _bilingual_book_maker_ project](https://github.com/yihong0618/bilingual_book_maker).**
 
-**This project is a tweaked version of his which gives you as an output _only the translated version_ of the file you input**
+**This project is a tweaked version of his which gives you as an output _only the translated version_ of the file you input.**
 <br/>
 <br/>
 
